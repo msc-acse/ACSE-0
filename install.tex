@@ -8,7 +8,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{enumerate}
-\usepackage{hyperref}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 
 
 \topmargin=0cm \oddsidemargin=0cm \evensidemargin=0cm \textheight=21cm
@@ -37,7 +37,7 @@
 
 \section{Foreword}
 
-Laptops are provided in their original box, which means you are responsible for installing them and using them according to College regulations [TODO link]. 
+Laptops are provided in their original box, which means you are responsible for installing them and using them according to College information security regulations (\url{https://www.imperial.ac.uk/admin-services/secretariat/college-governance/charters/policies-regulations-and-codes-of-practice/information-security-/policy/it-resources/}). 
 In particular, you are responsible for installing and configuring the appropriate security software (\url{https://www.imperial.ac.uk/admin-services/ict/self-service/be-secure/}).
 
 
@@ -45,7 +45,7 @@ In particular, you are responsible for installing and configuring the appropriat
 
 Here is a list of  software that you need to have installed on your laptop for the first four modules of the course.
 \footnote{In some cases, alternatives to our recommended solutions exist, but usually require more knowledge to maintain and might require some tweacking for some modules examples. 
-Therefore, if you choose to not follow our recommandations, it is at your own risks and perils, and no support will be provided.}
+Therefore, if you choose to not follow our recommandations, it is at your own risk, and no formal support will be provided.}
 
 \begin{itemize}
   \item Windows 10  64bit Pro, Enterprise or Education Editions (1607 Anniversary Update, Build 14393 or later) OR OSX  El Capitan 10.11 or later OR Ubuntu 16.04 LTS or later (other unix based systems will probably be fine as well provided you know how to use them)
@@ -57,20 +57,20 @@ Therefore, if you choose to not follow our recommandations, it is at your own ri
 \end{itemize}
 
 
-\section{Github account}
+\section{GitHub account}
 
-The Github platform will be widely used throughout the course, both to distribute material and to host your assignments.
+The GitHub platform will be widely used throughout the course, both to distribute material and to host your assignments.
 
-If you do not already have one, create a github account. 
-In order to create private repositories (where you can store your assignments without making them visible to others), apply to the student github status: 
+If you do not already have one, create a GitHub account (\url{https://github.com/join}).
+In order to create private repositories (where you can store your assignments without making them visible to others), apply to the student github status:\\ 
 \url{https://help.github.com/articles/applying-for-a-student-developer-pack/}.
 
-Send us your github username so we can give you access to course material.
+Send us your GitHub username so we can give you access to course material.
 
 
 \section{Installation guide}
 
-Please do not install updates during the IT clinic hours, as it requires several long reboots.
+Please do not install standard operating system updates during the IT clinic hours, as they can requires several long reboot cycles.
 
 \subsection{Windows 10 Education}
 
@@ -92,9 +92,9 @@ Be careful to select the 64-Bit Python 3.6 version.
 
 \subsection{Docker}
 
-Docker is a container software that we will use to distribute some codes that do not natively run or Windows. 
+Docker is a containerization software that we will use to distribute some codes that do not natively run on Windows. 
 It can be downloaded from this page \url{https://docs.docker.com/docker-for-windows/install/}. 
-Follow installation instructions [TODO was there a subtelty ?].
+Follow the sign up and installation instructions above. If virtualization has been disabled in your computer's BIOS, you may need to reenable it (\url{https://bce.berkeley.edu/enabling-virtualization-in-your-pc-bios.html}). This may require rebooting your computer.
 
 \subsection{git}
 
@@ -113,11 +113,14 @@ and \url{https://winscp.net/eng/download.php}.
 
 A significant amount of course material will be delivered through Jupyter Notebooks, which are run in a web browser. 
 Jupyter Notebooks may not work properly with Microsoft IE or Edge. 
-Therefore it is recommended using either Chrome or Mozilla Firefox.  
+Therefore it is recommended to use either Chrome or Mozilla Firefox on Windows.  
+\url{https://www.google.com/chrome/}
+\url{https://www.mozilla.org/en-GB/firefox/new/} 
 
-\subsection{Linux sub system}
 
-The Linux subsystem might be an alternative to using windows versions of the previous software. 
-However there is no garantee it will work for all the lectures and projects, and it is therefore not recommended except for recreational exploration.
+\subsection{Windows Subsystem for Linux}
+
+The Windows Subsystem for Linux (\url{https://docs.microsoft.com/en-us/windows/wsl/about}) might be an alternative to using Windows versions of the previously mentioned software. 
+However there is no guarantee it will work for all the lectures and projects, and it is therefore not recommended except for recreational exploration.
 
 \end{document}
