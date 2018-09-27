@@ -1,0 +1,96 @@
+\documentclass[11pt]{article}
+%\usepackage[a3paper]{geometry}
+%\usepackage[]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\usepackage{hyperref}
+
+
+\topmargin=0cm \oddsidemargin=0cm \evensidemargin=0cm \textheight=21cm
+\textwidth=16cm \headheight=15pt \footskip=35pt
+
+%\topmargin=0cm \oddsidemargin=0cm \evensidemargin=0cm \textheight=35cm
+%\textwidth=25cm \headheight=15pt \footskip=35pt
+
+\pagestyle{fancyplain}
+\fancyhead{} % clear all header fields
+\lhead{ACSE}
+\rhead{Required software}
+\fancyfoot{} % clear all footer fields
+\cfoot{\thepage}
+
+\begin{document}
+
+%headers
+\begin{center}
+{\bf \Large Required software and brief installation guide for the ACSE MSc course } \\ \today
+\end{center}
+\hrule
+\vspace*{1cm}
+
+% beginning of the content
+
+\section{Foreword}
+
+Laptops are provided in their original box, which means you are responsible for installing them and using them according to College regulations [TODO link]. In particular, you are responsible for installing and configuring the appropriate security software (https://www.imperial.ac.uk/admin-services/ict/self-service/be-secure/).
+
+\section{List of required software}
+
+Here is a list of  software that you need to have installed on your laptop for the first four modules of the course.\footnote{In some cases, alternatives to our recommended solutions exist, but usually require more knowledge to maintain and might require some tweacking for some modules examples. Therefore, if you chose to not follow our recommandations, it is at your own risks and perils, and no support will be provided.}
+
+\begin{itemize}
+  \item Windows 10  64bit Pro, Enterprise or Education Editions (1607 Anniversary Update, Build 14393 or later) OR OSX  El Capitan 10.11 or later OR Ubuntu 16.04 LTS or later (other unix based systems will probably be fine as well provided you know how to use them)
+  \item Anaconda (python 3.6 version)
+  \item Firefox or Chrome
+  \item Docker
+  \item git
+  \item Putty
+\end{itemize}
+
+
+\section{Installation guide}
+
+Please do not install updates during the clinic hours, as it requires several long reboots.
+
+\subsection{Windows 10 Education}
+
+Licenses are provided for free for Imperial College students.
+\begin{itemize}
+  \item Go to \url{http://www.onthehub.com/microsoft-windows-10-education-for-students/?utm_source=ms-student-page&utm_medium=microsoft-site&utm_campaign=windows10}
+  \item Get a licence key
+  \item Do not download the disk image (.iso file)
+  \item Go in windows settings -> System -> About -> Upgrade your edition of windows
+  \item Type in the licence key
+  \item Follow instructions and reboot
+\end{itemize}
+
+\subsection{Anaconda}
+
+Anaconda distribution is a python distribution with a lot of pre-packaged libraries. Download and install should be straightforward from this page: \url{https://www.anaconda.com/download}. Be careful to select the 64-Bit Python 3.6 version.
+
+\subsection{Docker}
+
+Docker is a container software that we will use to distribute some codes that do not natively run or Windows. can be downloaded from this page \url{https://docs.docker.com/docker-for-windows/install/}. Follow installation instructions [TODO was there a subtelty ?].
+
+\subsection{git}
+
+Git is a version control software that will be widely used throughout the course. The windows version can be downloaded and installed from \url{https://git-scm.com/download/win}. If asked for a default text editor and you know none of the options, choose nano.
+
+\subsection{Putty and winSCP}
+
+These two utilities allow you to connect to remote computers. Installation is extremely straightforward from \url{https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html} and \url{https://winscp.net/eng/download.php}.
+
+\subsection{Web browsers}
+
+A significant amount of course material will be delivered through Jupyter Notebooks, which are run in a web browser. Jupyter Notebooks may not work properly with Microsoft IE or Edge. Therefore it is recommended using either Chrome or Mozilla Firefox.  
+
+\subsection{Linux sub system}
+
+The Linux subsystem might be an alternative to using windows versions of the previous software, however there is no garantee it will work for all the lectures and projects, and is therefore not recommended except for recreational exploration.
+
+\end{document}
