@@ -44,7 +44,7 @@ In particular, you are responsible for installing and configuring the appropriat
 \section{List of required software}
 
 Here is a list of  software that you need to have installed on your laptop for the first four modules of the course.
-\footnote{In some cases, alternatives to our recommended solutions exist, but usually require more knowledge to maintain and might require some tweacking for some modules examples. 
+\footnote{In some cases, alternatives to our recommended solutions exist, but usually require more knowledge to maintain and might require some tweaking for some modules examples. 
 Therefore, if you choose to not follow our recommandations, it is at your own risk, and no formal support will be provided.}
 
 \begin{itemize}
@@ -53,7 +53,7 @@ Therefore, if you choose to not follow our recommandations, it is at your own ri
   \item Firefox or Chrome
   \item Docker
   \item git
-  \item Putty
+  \item Putty and WinSCP
 \end{itemize}
 
 
@@ -70,16 +70,20 @@ Send us your GitHub username so we can give you access to course material.
 
 \section{Installation guide}
 
-Please do not install standard operating system updates during the IT clinic hours, as they can requires several long reboot cycles.
+\subsection{Start-up}
+
+You are free to install the laptop however you want. We advise declining to use your microsoft account (either College one or personal one) for now. You can use the username you want, provided it fits in College regulations. The WiFi network you should connect to is "Imperial-WPA" with your Imperial username (...@ic.ac.uk) and password.
+
+Please do not install standard operating system updates during the IT clinic hours, as they can require several long reboot cycles.
 
 \subsection{Windows 10 Education}
 
-Licenses are provided for free for Imperial College students.
+Licenses are provided for free for Imperial College students. Check your licence in Settings -> System -> About. If it is Windows Home Edition, upgrade to an Education Edition:
 \begin{itemize}
   \item Go to \url{http://www.onthehub.com/microsoft-windows-10-education-for-students/?utm_source=ms-student-page&utm_medium=microsoft-site&utm_campaign=windows10}
-  \item Get a licence key
+  \item Get a licence key (select \"Imperial College London - Microsoft Imagine Premium\" as Department)
   \item Do not download the disk image (.iso file)
-  \item Go in windows settings -> System -> About -> Upgrade your edition of windows
+  \item Go in windows settings -> System -> About -> Upgrade your edition of Windows
   \item Type in the licence key
   \item Follow instructions and reboot
 \end{itemize}
@@ -117,10 +121,27 @@ Therefore it is recommended to use either Chrome or Mozilla Firefox on Windows.
 \url{https://www.google.com/chrome/}
 \url{https://www.mozilla.org/en-GB/firefox/new/} 
 
+\subsection{JupyterHub}
+
+A cloud-based solution for running Jupyter notebooks will be used in some lectures. Please log-in once at the following address and confirm it worked by the end of the week.
+\url{https://ese-jhub.westeurope.cloudapp.azure.com/}
+
 
 \subsection{Windows Subsystem for Linux}
 
 The Windows Subsystem for Linux (\url{https://docs.microsoft.com/en-us/windows/wsl/about}) might be an alternative to using Windows versions of the previously mentioned software. 
 However there is no guarantee it will work for all the lectures and projects, and it is therefore not recommended except for recreational exploration.
+
+
+\section{Other useful programmes}
+
+The following programmes will be useful later in the course:
+\begin{itemize}
+  \item Microsoft Office for admin purposes (licence provided by the College)
+  \item LaTeX, to write scientific reports
+  \item Paraview
+  \item Slack, for team work
+\end{itemize}
+
 
 \end{document}
