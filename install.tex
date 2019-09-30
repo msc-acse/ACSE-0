@@ -50,11 +50,12 @@ Here is a list of  software that you need to have installed on your laptop for t
 Therefore, if you choose to not follow our recommendations, it is at your own risk, and no formal support will be provided.}
 
 \begin{itemize}
-  \item Anaconda (python 3.6 version)
+  \item Windows 10  64bit Pro, Enterprise or Education Editions (April 2018 Update 1803, build 17134 or later) OR OSX High Sierra 10.13 or later OR Ubuntu 18.04 LTS or later (other unix based systems will probably be fine as well provided you know how to use them)
+  \item Anaconda (python 3.7 version)
   \item Firefox or Chrome
   \item Docker
   \item git
-  \item Putty and WinSCP
+  \item An SSH client such as OpenSSH
 \end{itemize}
 
 
@@ -79,7 +80,7 @@ This account will be used for all assessments in the MSc. If you submit an asses
 
 \subsection{Start-up}
 
-You are free to install the laptop however you want. We strongly advise declining to use your Microsoft account (either College one or personal one) for now and create an {\bf offline} account. You can use the username you want, provided it fits in College regulations. 
+You are free to install the laptop however you want. We strongly advise declining to use your Microsoft account (either College one or personal one) for now and create an {\bf offline} account. You can use the username you want, provided it fits the College regulations. 
 
 Please do not install standard operating system updates during the IT clinic hours, as they can require several long reboot cycles.
 
@@ -90,24 +91,24 @@ The WiFi network you should connect to is "Imperial-WPA" with your Imperial user
 
 Licenses are provided for free for Imperial College students. Check your licence in Settings -> System -> About. If it is Windows Home Edition, upgrade to an Education Edition:
 \begin{itemize}
-  \item Go to \url{http://www.onthehub.com/microsoft-windows-10-education-for-students/?utm_source=ms-student-page&utm_medium=microsoft-site&utm_campaign=windows10}
-  \item Get a licence key (select 
- "Imperial College London" as School and "Imperial College London - Microsoft Imagine Premium" as Department)
-  \item Do not download the disk image (.iso file)
+  \item Go to \url{https://azureforeducation.microsoft.com/devtools}
+  \item Sign in using your Imperial username and password
+  \item Select ``Software'' from the Education menu.
+  \item Scroll down and select Windows 10 Education, (not Education N) and scroll the rightmost pane down to select `View Key'. 
   \item Go in windows settings -> System -> About -> Upgrade your edition of Windows
-  \item Type in the licence key
-  \item Follow instructions and reboot
+  \item Type in the licence key obtained above.
+  \item Follow instructions and reboot.
 \end{itemize}
 
 \subsection{Anaconda}
 
-Anaconda distribution is a python distribution with a lot of pre-packaged libraries. 
-Download and install should be straightforward from this page: \url{https://www.anaconda.com/download}. 
-Be careful to select the 64-Bit Python 3.6 version.
+Anaconda distribution is a Python distribution with a lot of pre-packaged libraries. 
+Download and install should be straightforward from this page: \url{https://www.anaconda.com/distribution}. 
+Be careful to select the 64-Bit Python 3.7 version for your OS.
 
 \subsection{Docker}
 
-Docker is a containerization software that we will use to distribute some codes that do not natively run on Windows. 
+Docker is a containerization software that we will use to distribute some codes that do not natively run on Windows or Macs. 
 It can be downloaded from this page \url{https://docs.docker.com/docker-for-windows/install/}. 
 Follow the sign up and installation instructions above. If virtualization has been disabled in your computer's BIOS, you may need to reenable it (\url{https://bce.berkeley.edu/enabling-virtualization-in-your-pc-bios.html}). This may require rebooting your computer.
 
@@ -117,12 +118,13 @@ Git is a version control software that will be widely used throughout the course
 The windows version can be downloaded and installed from \url{https://git-scm.com/download/win}. 
 If asked for a default text editor and you know none of the options, choose nano.
 
-\subsection{Putty and winSCP}
+\subsection{OpenSSH for Windows}
 
-These two utilities allow you to connect to remote computers. 
-Installation is extremely straightforward from 
-\url{https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html} 
-and \url{https://winscp.net/eng/download.php}.
+The Secure Shell (SSH) is a method to securely access remote computers such as HPC systems. To install OpenSSH:
+\begin{itemize}
+\item Start Settings then go to Apps > Apps and Features > Manage Optional Features.
+\item Scan this list to see if OpenSSH client is already installed. If not, then at the top of the page select "Add a feature", then locate "OpenSSH Client", then click "Install".
+\end{itemize}
 
 \subsection{Web browsers}
 
@@ -151,7 +153,7 @@ The following software will be useful later in the course:
   \item Microsoft Office for admin purposes (licence provided by the College, \url{http://www.imperial.ac.uk/admin-services/ict/training-and-resources/microsoft-office-365/})
   \item LaTeX, to write scientific reports (\url{https://www.latex-project.org/get/})
   \item Paraview (\url{https://www.paraview.org/download/})
-  \item Slack, for team work (\url{https://slack.com})
+  \item Microsoft Teams, for team work (\url{https://products.office.com/en-us/microsoft-teams/download-app})
 \end{itemize}
 
 
@@ -194,7 +196,7 @@ More info available about One Drive available at \url{http://www.imperial.ac.uk/
 \paragraph*{Things to Note:}
 \begin{itemize}
   \item Large applications can take a while to launch, especially when you run them for the first time. A slow internet connection can also impact the time it takes to launch. Be patient. The player will show you the progress.
-  \item The software runs just like it would if it was installed on the machine. So it uses the local hardware such as the processor, memory, and hard disk. Therefore if it’s running slowly, it could be due to the hardware spec of the machine you’re running it on.
+  \item The ssoftware runs just like it would if it was installed on the machine. So it uses the local hardware such as the processor, memory, and hard disk. Therefore if it’s running slowly, it could be due to the hardware spec of the machine you’re running it on.
   \item You can run the software on any campus computer. So if, for example, you’re at South Kensington, you can logon to the machines in the Central Library, click on the Software Hub link on the desktop, and you’ll be able to run your software from there.
   \item You can run the software though Application Jukebox on any personal machine. This is useful if you have more than one machine. 
 \end{itemize}
